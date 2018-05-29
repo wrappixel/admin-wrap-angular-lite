@@ -1585,3 +1585,12 @@ Taskboard scss
     margin-bottom: 8px;
   }
 }
+
+//dropdown header
+.navbar-expand-md{
+    .navbar-nav{
+        .dropdown-menu{
+            right: 0;
+        }
+    }
+} 

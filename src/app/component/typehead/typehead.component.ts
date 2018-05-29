@@ -1,14 +1,17 @@
+
+import {of as observableOf, Observable} from 'rxjs';
+
+import {tap, map, switchMap, distinctUntilChanged, debounceTime, catchError} from 'rxjs/operators';
 import { Component, Injectable } from '@angular/core';
-import {Observable} from 'rxjs/Observable';
 import {Jsonp, URLSearchParams} from '@angular/http';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/debounceTime';
-import 'rxjs/add/operator/distinctUntilChanged';
-import 'rxjs/add/observable/of';
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/do';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/switchMap';
+
+
+
+
+
+
+
+
 
 
 const states = ['Alabama', 'Alaska', 'American Samoa', 'Arizona', 'Arkansas', 'California', 'Colorado',
@@ -82,7 +85,7 @@ export class WikipediaService {
 
   search(term: string) {
     if (term === '') {
-      return Observable.of([]);
+      return observableOf([]);
     }
 
     let wikiUrl = 'https://en.wikipedia.org/w/api.php';
@@ -93,8 +96,8 @@ export class WikipediaService {
     params.set('callback', 'JSONP_CALLBACK');
 
     return this._jsonp
-      .get(wikiUrl, {search: params})
-      .map(response => <string[]> response.json()[1]);
+      .get(wikiUrl, {search: params}).pipe(
+      map(response => <string[]> response.json()[1]));
   }
 }
 
@@ -115,34 +118,34 @@ export class NgbdtypeheadBasic{
   formatter = (result: string) => result.toUpperCase();
   
   search = (text$: Observable<string>) =>
-    text$
-      .debounceTime(200)
-      .distinctUntilChanged()
-      .map(term => term.length < 2 ? []
-        : states.filter(v => v.toLowerCase().indexOf(term.toLowerCase()) > -1).slice(0, 10));
+    text$.pipe(
+      debounceTime(200),
+      distinctUntilChanged(),
+      map(term => term.length < 2 ? []
+        : states.filter(v => v.toLowerCase().indexOf(term.toLowerCase()) > -1).slice(0, 10)),);
 
    search2 = (text2$: Observable<string>) =>
-    text2$
-      .debounceTime(300)
-      .distinctUntilChanged()
-      .do(() => this.searching = true)
-      .switchMap(term =>
-        this._service.search(term)
-            .do(() => this.searchFailed = false)
-            .catch(() => {
+    text2$.pipe(
+      debounceTime(300),
+      distinctUntilChanged(),
+      tap(() => this.searching = true),
+      switchMap(term =>
+        this._service.search(term).pipe(
+            tap(() => this.searchFailed = false),
+            catchError(() => {
               this.searchFailed = true;
-              return Observable.of([]);
-            }))
-      .do(() => this.searching = false);  
+              return observableOf([]);
+            }),)),
+      tap(() => this.searching = false),);  
 
       // This is with the flag
       public model4: any;
 
   search3 = (text3$: Observable<string>) =>
-    text3$
-      .debounceTime(200)
-      .map(term => term === '' ? []
-        : statesWithFlags.filter(v => v.name.toLowerCase().indexOf(term.toLowerCase()) > -1).slice(0, 10));
+    text3$.pipe(
+      debounceTime(200),
+      map(term => term === '' ? []
+        : statesWithFlags.filter(v => v.name.toLowerCase().indexOf(term.toLowerCase()) > -1).slice(0, 10)),);
 
   formatter2 = (x: {name: string}) => x.name; 
 }
