@@ -31,11 +31,10 @@ export const ROUTES: RouteInfo[] = [
     extralink: true,
     submenu: []
   },
-
-  {
+{
     path: '/component/accordion',
     title: 'Accordion',
-    icon: 'mdi mdi-file',
+    icon: 'mdi mdi-equal',
     class: '',
     label: '',
     labelClass: '',
@@ -45,7 +44,7 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/component/alert',
     title: 'Alert',
-    icon: 'mdi mdi-file',
+    icon: 'mdi mdi-message-bulleted',
     class: '',
     label: '',
     labelClass: '',
@@ -55,7 +54,7 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/component/carousel',
     title: 'Carousel',
-    icon: 'mdi mdi-file',
+    icon: 'mdi mdi-view-carousel',
     class: '',
     label: '',
     labelClass: '',
@@ -65,7 +64,7 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/component/dropdown',
     title: 'Dropdown',
-    icon: 'mdi mdi-file',
+    icon: 'mdi mdi-arrange-bring-to-front',
     class: '',
     label: '',
     labelClass: '',
@@ -75,7 +74,7 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/component/modal',
     title: 'Modal',
-    icon: 'mdi mdi-file',
+    icon: 'mdi mdi-tablet',
     class: '',
     label: '',
     labelClass: '',
@@ -85,7 +84,7 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/component/pagination',
     title: 'Pagination',
-    icon: 'mdi mdi-file',
+    icon: 'mdi mdi-backburger',
     class: '',
     label: '',
     labelClass: '',
@@ -95,7 +94,7 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/component/poptool',
     title: 'Popover & Tooltip',
-    icon: 'mdi mdi-file',
+    icon: 'mdi mdi-image-filter-vintage',
     class: '',
     label: '',
     labelClass: '',
@@ -105,7 +104,7 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/component/progressbar',
     title: 'Progressbar',
-    icon: 'mdi mdi-file',
+    icon: 'mdi mdi-poll',
     class: '',
     label: '',
     labelClass: '',
@@ -115,7 +114,7 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/component/rating',
     title: 'Ratings',
-    icon: 'mdi mdi-file',
+    icon: 'mdi mdi-bandcamp',
     class: '',
     label: '',
     labelClass: '',
@@ -125,7 +124,7 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/component/tabs',
     title: 'Tabs',
-    icon: 'mdi mdi-file',
+    icon: 'mdi mdi-sort-variant',
     class: '',
     label: '',
     labelClass: '',
@@ -135,7 +134,7 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/component/timepicker',
     title: 'Timepicker',
-    icon: 'mdi mdi-file',
+    icon: 'mdi mdi-calendar-clock',
     class: '',
     label: '',
     labelClass: '',
@@ -145,7 +144,7 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/component/buttons',
     title: 'Button',
-    icon: 'mdi mdi-file',
+    icon: 'mdi mdi-toggle-switch',
     class: '',
     label: '',
     labelClass: '',
@@ -155,7 +154,7 @@ export const ROUTES: RouteInfo[] = [
   {
     path: '/component/cards',
     title: 'Card',
-    icon: 'mdi mdi-file',
+    icon: 'mdi mdi-blur-radial',
     class: '',
     label: '',
     labelClass: '',
