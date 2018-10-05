@@ -1,5 +1,10 @@
 # AdminAngular
+<a href="https://wrappixel.com">
+<img src="https://wrappixel.com/wp-content/uploads/2017/03/wp-updated-logo.jpg" /></a>
+<br/>
 
+<a href="https://wrappixel.com/templates/adminwrap/">
+<img src="https://wrappixel.com/demos/images/adminwrap-promotion-wp-s.jpg"/></a>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
 ## Development server
