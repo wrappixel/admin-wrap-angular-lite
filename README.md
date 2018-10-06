@@ -6,8 +6,6 @@
 <a href="https://wrappixel.com/templates/adminwrap/">
 <img src="https://wrappixel.com/demos/images/adminwrap-promotion-wp-s.jpg"/></a><br/>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
-<h4>Check this Repo Live Demo</h4>
-<h3><a href="https://wrappixel.com/demos/angular-admin-templates/admin-pro-angular-lite/">Demo</a></h3>
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
