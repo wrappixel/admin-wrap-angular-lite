@@ -1,11 +1,13 @@
-# AdminAngular
-<a href="https://wrappixel.com">
-<img src="https://wrappixel.com/wp-content/uploads/2017/03/wp-updated-logo.jpg" /></a>
-<br/>
+# adminwrap-admin-angular-lite
 
-<a href="https://wrappixel.com/templates/adminwrap-angular/">
-<img src="https://wrappixel.com/wp-content/uploads/edd/2018/03/adminwrap-angular-das-prev.jpg"/></a><br/>
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.<br/>
+<h4><a href="https://www.wrappixel.com/demos/angular-admin-templates/admin-wrap-angular-lite/starter">Free Version Demo Link</a></h4>
+
+## Pro Version
+
+<a href="https://www.wrappixel.com/templates/adminwrap-angular/"><img src="https://www.wrappixel.com/wp-content/uploads/2019/01/adminwrap-angular-nw-1.jpg"/></a><br/>
+
+<h4><a href="https://www.wrappixel.com/demos/angular-admin-templates/admin-wrap-angular/main/dashboard/dashboard1">Demo</a></h4>
+
 
 ## Development server
 
@@ -17,7 +19,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
 
