@@ -22,11 +22,6 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/angular-calendar/css/angular-calendar.css",
-              "node_modules/chartist/dist/chartist.css",
-              "node_modules/ng2-toastr/bundles/ng2-toastr.min.css",
-              "node_modules/quill/dist/quill.snow.css",
-              "node_modules/dragula/dist/dragula.css",
               "src/assets/scss/style.scss"
             ],
             "scripts": [
@@ -86,11 +81,6 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/angular-calendar/css/angular-calendar.css",
-              "node_modules/chartist/dist/chartist.css",
-              "node_modules/ng2-toastr/bundles/ng2-toastr.min.css",
-              "node_modules/quill/dist/quill.snow.css",
-              "node_modules/dragula/dist/dragula.css",
               "src/assets/scss/style.scss"
             ],
             "assets": [

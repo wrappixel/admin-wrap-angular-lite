@@ -152,9 +152,19 @@ export const ROUTES: RouteInfo[] = [
         submenu: []
     },
     {
-        path: '/component/cards',
+        path: '/component/card',
         title: 'Card',
         icon: 'mdi mdi-blur-radial',
+        class: '',
+        label: '',
+        labelClass: '',
+        extralink: false,
+        submenu: []
+    },
+    {
+        path: '/component/toast',
+        title: 'Toast',
+        icon: 'mdi mdi-alert',
         class: '',
         label: '',
         labelClass: '',
