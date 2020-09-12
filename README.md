@@ -1,3 +1,4 @@
+<!-- This demo has no light version so its not complete -->
 # adminwrap-admin-angular-lite
 
 <h4><a href="https://www.wrappixel.com/demos/angular-admin-templates/admin-wrap-angular-lite/starter">Free Version Demo Link</a></h4>
