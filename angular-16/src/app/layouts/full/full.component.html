@@ -1,0 +1,105 @@
+<!-- ============================================================== -->
+<!-- Main wrapper - style you can find in pages.scss -->
+<!-- ============================================================== -->
+<div id="main-wrapper" [ngClass]="
+    {
+        
+        'default': color == 'default',
+        'show-sidebar': showMobileMenu
+        
+    }
+">
+  <!-- ============================================================== -->
+  <!-- Topbar header - style you can find in pages.scss -->
+  <!-- ============================================================== -->
+  <header class="topbar">
+    <nav class="navbar top-navbar navbar-expand-md navbar-light">
+      <!-- ============================================================== -->
+      <!-- Logo -->
+      <!-- ============================================================== -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">
+          <!-- Logo icon --><b>
+            <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+            <!-- Dark Logo icon -->
+            <img src="assets/images/logo-icon.png" alt="homepage" class="dark-logo" />
+            <!-- Light Logo icon -->
+            <img src="assets/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+          </b>
+          <!--End Logo icon -->
+          <!-- Logo text --><span>
+            <!-- dark Logo text -->
+            <img src="assets/images/logo-text.png" alt="homepage" class="dark-logo" />
+            <!-- Light Logo text -->
+            <img src="assets/images/logo-light-text.png" class="light-logo" alt="homepage" /></span> </a>
+      </div>
+      <!-- ============================================================== -->
+      <!-- End Logo -->
+      <!-- ============================================================== -->
+      <div class="navbar-collapse">
+        <!-- ============================================================== -->
+        <!-- toggle and nav items -->
+        <!-- ============================================================== -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link sidebartoggler d-block d-lg-none waves-effect waves-dark"
+              (click)="showMobileMenu = !showMobileMenu" href="javascript:void(0)"><i class="fa fa-bars"></i>
+            </a>
+          </li>
+        </ul>
+        <!-- ============================================================== -->
+        <!-- User profile and search -->
+        <!-- ============================================================== -->
+        <ap-navigation class="ms-auto"></ap-navigation>
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- ============================================================== -->
+  <!-- Left Sidebar - style you can find in sidebar.scss  -->
+  <!-- ============================================================== -->
+  <aside class="left-sidebar">
+    <!-- Sidebar scroll-->
+    <ng-scrollbar class="scroll-sidebar">
+      <ap-sidebar></ap-sidebar>
+    </ng-scrollbar>
+    <!-- End Sidebar scroll-->
+  </aside>
+  <!-- ============================================================== -->
+  <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+  <!-- ============================================================== -->
+  <!-- ============================================================== -->
+  <!-- Page wrapper  -->
+  <!-- ============================================================== -->
+  <div class="page-wrapper">
+    <!-- ============================================================== -->
+    <!-- Container fluid  -->
+    <!-- ============================================================== -->
+    <div class="container-fluid">
+      <breadcrumb></breadcrumb>
+      <!-- ============================================================== -->
+      <!-- Start Page Content -->
+      <!-- ============================================================== -->
+      <router-outlet></router-outlet>
+      <!-- ============================================================== -->
+      <!-- End Start Page Content -->
+      <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Container fluid  -->
+    <!-- ============================================================== -->
+  </div>
+  <!-- ============================================================== -->
+  <!-- End Page wrapper  -->
+  <!-- ============================================================== -->
+  <!-- ============================================================== -->
+  <!-- footer -->
+  <!-- ============================================================== -->
+  <footer class="footer">
+    © 2023 Admin Wrap Angular by wrappixel.com
+  </footer>
+  <!-- ============================================================== -->
+  <!-- End footer -->
+  <!-- ============================================================== -->
+</div>

@@ -1,0 +1,97 @@
+/*-- ============================================================== 
+ Small Desktop & above all (1024px) 
+ ============================================================== */
+
+@media(min-width:1024px) {
+    .page-wrapper{
+        margin-left:240px;    
+    }  
+    .footer{
+        left: 240px;
+    }     
+}
+
+/*-- ============================================================== 
+ Ipad & above all(768px) 
+ ============================================================== */
+@media(min-width:768px) {
+    .navbar-header {
+        width: 240px;
+        flex-shrink:0;
+        .navbar-brand {
+            padding-top: 0px;
+        }
+    }
+    /*This is for the breeadcrumd*/
+    .page-titles{
+        .breadcrumb{
+            text-transform: uppercase;
+        }
+    }
+    .card-group .card:first-child, .card-group .card:not(:first-child):not(:last-child){
+        border-right:1px solid rgba(0, 0, 0, 0.03); 
+    }
+   .mini-sidebar {
+        .page-wrapper{
+            margin-left:70px;
+        }
+        .footer{
+            left: 70px;
+        }
+    }
+    .flex-wrap{
+        flex-wrap:nowrap!important;
+        -webkit-flex-wrap:nowrap!important;
+    }
+    .navbar-expand-md .navbar-nav .dropdown-menu-right{
+        left:auto!important;
+    }
+}
+
+
+/*-- ============================================================== 
+ Phone and below ipad(767px) 
+ ============================================================== */
+
+@media(max-width:767px) {
+    /*Header*/
+    .topbar {
+        width: 100%;
+        .top-navbar {
+            padding-right: 15px;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            .navbar-collapse {
+                display: flex;
+                width: 100%;
+            }
+            .navbar-header{ 
+                width: 70px;
+            }
+            .navbar-brand span{
+                display: none;
+            }
+            .navbar-nav {
+                flex-direction: row;
+                > .nav-item.show {
+                    position: static;
+                }
+                > .nav-item > .nav-link {
+                    padding-left: .50rem;
+                    padding-right: .50rem;
+                }
+            }
+        }
+    }
+    /*Sidebar and wrapper*/
+    .mini-sidebar .page-wrapper{
+        margin-left:0px;
+    }
+    /*Footer*/
+    .footer{
+        left: 0px;
+    }
+}

@@ -1,0 +1,126 @@
+/*
+Template Name: Admin Wrap Admin
+Author: Wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*******************
+Main sidebar
+******************/
+
+.left-sidebar {
+    position: absolute;
+    width: 240px;
+    height: 100vh;
+    top: 0px;
+    z-index: 20;
+    padding-top: 70px;
+    background: $sidebar;
+    border-right: 1px solid $border;
+    transition: 0.2s ease-in;
+}
+
+.fix-sidebar .left-sidebar {
+    position: fixed;
+}
+
+
+/*******************
+sidebar navigation
+******************/
+
+.scroll-sidebar {
+    height: calc(100vh - 70px);
+    position: relative;
+
+    &.ps .ps__rail-y {
+        left: 2px;
+        right: auto;
+        background: none;
+        width: 6px;
+    }
+}
+
+.collapse.in {
+    display: block;
+}
+
+.nav-small-cap {
+    font-size: 12px;
+    margin-bottom: 0px;
+    padding: 30px 14px 14px 14px;
+    color: $muted;
+    font-weight: 500;
+}
+
+.sidebar-nav {
+    padding: 15px 0 0 0px;
+
+    ul {
+        margin: 0px;
+        padding: 0px;
+
+        li {
+            list-style: none;
+
+            a {
+                color: $sidebar-text;
+                padding: 8px 35px 8px 15px;
+                display: flex;
+                white-space: nowrap;
+                align-items: center;
+                font-weight: 400;
+
+                &.active,
+                &:hover {
+                    color: $themecolor;
+
+                    i {
+                        color: $themecolor;
+                    }
+                }
+            }
+        }
+    }
+
+    >ul>li>a {
+        i {
+            width: 30px;
+            font-size: 20px;
+            display: inline-block;
+            vertical-align: middle;
+            color: $sidebar-icons;
+        }
+    }
+
+    >ul>li {
+        margin-bottom: 5px;
+
+        &.active>a {
+            color: $themecolor;
+            font-weight: 500;
+
+            i {
+                color: $themecolor;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    .left-sidebar {
+        left: -240px;
+
+    }
+
+    .default {
+        &.show-sidebar {
+            .left-sidebar {
+                left: 0;
+            }
+        }
+    }
+
+}

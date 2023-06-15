@@ -1,0 +1,32 @@
+/*
+Template Name: Admin Press Admin
+Author: Themedesigner
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/**
+ * Table Of Content
+ *
+ * 	1. Globals
+ *	2. Headers
+ *	3. Navigations
+ *	4. Banners
+ *	5. Footers
+ *	6. app
+ *	7. Widgets
+ *	8. Custom Templates
+ */
+@import "../../../node_modules/bootstrap/scss/bootstrap"; 
+@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+@import 'variable'; 
+
+@import 'app';
+@import 'pages';
+@import 'sidebar';
+@import 'icons/font-awesome/css/font-awesome.min.css';
+@import "icons/material-design-iconic-font/css/materialdesignicons.min.css";
+@import 'widgets';
+@import 'responsive';  
+@import 'spinners.scss'; 
+@import 'theme-settings.scss';   
+
