@@ -1,0 +1,72 @@
+/*******************
+/*User mail widgets*/
+/*******************/
+
+.mailbox {
+    .message-center {
+        a {
+            border-bottom: 1px solid $border;
+            display: block;
+            text-decoration: none;
+            padding: 9px 15px;
+            &:hover {
+                background: $light;
+            }
+            div {
+                white-space: normal;
+            }
+            .mail-contnet {
+                display: inline-block;
+                width: 75%;
+                vertical-align: middle;
+                h5 {
+                    margin: 5px 0px 0;
+                }
+                .mail-desc,
+                .time {
+                    font-size: 12px;
+                    display: block;
+                    margin: 1px 0;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    color: $bodytext;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+
+/*******************/
+/*Feed widget*/
+/*******************/
+
+.feeds {
+    margin: 0px;
+    padding: 0px;
+    li {
+        list-style: none;
+        padding: 10px;
+        display: block;
+        &:hover {
+            background: $extra-light;
+        }
+        > div {
+            width: 40px;
+            height: 40px;
+            margin-right: 5px;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            border-radius: 100%;
+            i {
+                line-height: 40px;
+            }
+        }
+        span {
+            float: right;
+            width: auto;
+            font-size: 12px;
+        }
+    }
+}

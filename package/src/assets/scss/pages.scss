@@ -1,0 +1,262 @@
+/*
+Template Name: Admin wrap Admin
+Author: Themedesigner
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+
+@import 'variable';
+
+
+/*============================================================== 
+ For all pages 
+ ============================================================== */
+
+#main-wrapper {
+  width: 100%;
+}
+
+
+.page-wrapper {
+  background: $bodycolor;
+  padding-bottom: 60px;
+  height: calc(100vh - 64px); 
+  position: relative;
+    overflow: auto;
+}
+
+.container-fluid {
+  padding: 25px;
+}
+
+/*******************
+ Topbar
+*******************/
+
+.topbar {
+  position: relative;
+  z-index: 50;
+  .top-navbar {
+    min-height: 50px;
+    padding: 0px 0px 0 0;
+    .dropdown-toggle::after {
+      display: none;
+    }
+    .navbar-header {
+      line-height: 45px;
+      padding-left: 10px;
+      border-right:1px solid $border;
+      .navbar-brand {
+        margin-right: 0px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        .light-logo {
+          display: none;
+        }
+        b {
+          line-height: 60px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .profile-pic {
+    border-left: 1px solid $border;
+  }
+  ul.dropdown-user {
+    padding: 0px;
+    min-width: 270px;
+    li {
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+      &.divider {
+        height: 1px;
+        margin: 9px 0;
+        overflow: hidden;
+        background-color: $border;
+      }
+      a {
+        padding: 9px 15px;
+        display: block;
+        color: $bodytext;
+        &:hover {
+          background: $light;
+          color: $themecolor;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+/*******************
+ Footer
+*******************/
+
+.footer {
+  bottom: 0;
+  color: $bodytext;
+  left: 0px;
+  padding: 17px 15px;
+  position: absolute;
+  right: 0;
+  border-top: 1px solid $border;
+  background: $white;
+  text-align: center;
+}
+
+
+
+/*******************
+ Card title
+*******************/
+
+.card {
+  margin-bottom: 30px;
+  .card-subtitle {
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: $muted;
+  }
+}
+
+.card-inverse .card-bodyquote .blockquote-footer,
+.card-inverse .card-link,
+.card-inverse .card-subtitle,
+.card-inverse .card-text {
+  color: rgba(255, 255, 255, .65);
+}
+html body .card{
+&.card-success {
+  background: $success;
+  border-color: $success;
+}
+
+&.card-danger {
+  background: $danger;
+  border-color: $danger;
+}
+
+&.card-warning {
+  background: $warning;
+  border-color: $warning;
+}
+
+&.card-info {
+  background: $info;
+  border-color: $info;
+}
+
+&.card-primary {
+  background: $primary;
+  border-color: $primary;
+}
+
+&.card-dark {
+  background: $inverse;
+  border-color: $inverse;
+}
+
+&.card-megna {
+  background: $megna;
+  border-color: $megna;
+}
+}
+/*============================================================== 
+ Cards page
+ ============================================================== */
+
+.collapsing {
+  -webkit-transition: height .08s ease;
+  transition: height .08s ease;
+}
+
+/*============================================================== 
+ Buttons page
+ ============================================================== */
+
+.button-group {
+  .btn {
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+}
+
+.no-button-group {
+  .btn {
+    margin-bottom: 5px;
+    margin-right: 0px;
+  }
+}
+
+.btn {
+  .text-active {
+    display: none;
+  }
+  &.active .text-active {
+    display: inline-block;
+  }
+  &.active .text {
+    display: none;
+  }
+}
+
+
+/*============================================================== 
+Breadcrumb
+ ============================================================== */
+
+
+
+/*============================================================== 
+ Ui-bootstrap
+ ============================================================== */
+
+ul.list-icons {
+  margin: 0px;
+  padding: 0px;
+  li {
+    list-style: none;
+    line-height: 30px;
+    margin: 5px 0;
+    transition: 0.2s ease-in;
+    a {
+      color: $bodytext;
+      &:hover {
+        color: $themecolor;
+      }
+    }
+    i {
+      font-size: 13px;
+      padding-right: 8px;
+    }
+  }
+}
+
+ul.list-inline {
+  li {
+    display: inline-block;
+    padding: 0 8px;
+  }
+}
+/*******************
+Table-Layout
+******************/
+
+.table thead th,
+.table th {
+  border: 0px;
+}
+
+
+
+// scafholding
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
