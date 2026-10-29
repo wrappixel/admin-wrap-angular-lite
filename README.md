@@ -5,8 +5,6 @@
 
 ## Pro Version
 
-<a href="https://www.wrappixel.com/templates/adminwrap-angular/"><img src="https://www.wrappixel.com/wp-content/uploads/2019/01/adminwrap-angular-nw-1.jpg"/></a><br/>
-
 <h4><a href="https://www.wrappixel.com/demos/angular-admin-templates/admin-wrap-angular/main/dashboard/dashboard1">Demo</a></h4>
 
 
